@@ -114,6 +114,7 @@ switch (true){
 Напишите условие для покупки и выведите результат
 */
 
+/*
 let balance = 1200;
 let bonusBalance = 100;
 let isBanned = false;
@@ -123,3 +124,16 @@ let isSelling = true;
 let result = (balance > 1000||bonusBalance > 100) && !isBanned && !isExist && isSelling;
 
 console.log(result ? 'Игрок может купить игру :)' : 'Игрок не может купить игру :(');
+
+*/
+
+/* Переписать функцию в стрелочную */
+
+function toPower(num, power){
+    const res = num ** power;
+    return res;
+}
+
+const toPowerArrow = (num, power) => num ** power;
+
+console.log(toPowerArrow(2,3));
