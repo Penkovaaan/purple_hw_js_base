@@ -103,28 +103,23 @@ switch (true){
 }
     */
 
-const a = 5;
-switch(a) {
-    case '5':
-        console.log('1');
-    case 5:
-        console.log('2');
-    case 4:
-        console.log('2');
-    case 6:
-        console.log('2');
-}
 
-const  b = 3;
-switch(b) {
-    case 5:
-        console.log('1');
-        break;
-    case 4:
-        console.log('2');
-        break;
-    default:
-        console.log('3');
-    case 2:
-        console.log('4')
-}
+/*
+Пользователь хочет приобрести игру в магазине
+Он может это сделать если:
+- его баланс больше 1000 (balance) или число бонусов больше 100 (bonusBalance)
+- он не забанен (isBanned)
+- игра не куплена (isExist)
+- игра в продаже (isSelling)
+Напишите условие для покупки и выведите результат
+*/
+
+let balance = 1200;
+let bonusBalance = 100;
+let isBanned = false;
+let isExist = false;
+let isSelling = true;
+
+let result = (balance > 1000||bonusBalance > 100) && !isBanned && !isExist && isSelling;
+
+console.log(result ? 'Игрок может купить игру :)' : 'Игрок не может купить игру :(');
