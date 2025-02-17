@@ -129,21 +129,51 @@ console.log(result ? 'Игрок может купить игру :)' : 'Игр�
 
 /* Переписать функцию в стрелочную */
 
-<<<<<<< Updated upstream
+/*
 function toPower(num, power){
-=======
-function toPower(num = 2, power){
->>>>>>> Stashed changes
     const res = num ** power;
     return res;
 }
 
-<<<<<<< Updated upstream
 const toPowerArrow = (num, power) => num ** power;
 
 console.log(toPowerArrow(2,3));
-=======
-const toPowerArrow = (num = 2, power) => num ** power;
+*/
 
-console.log(toPowerArrow(2));
->>>>>>> Stashed changes
+/*
+Пользователь:
+
+    Возраст
+    Наличие работы
+    Деньги
+
+Нужно проверить может ли он купить новый MacBook за 2000$?
+Он может брать не только свои деньги, но и взять кредит.
+Ему дадут 500$, только если ему больше 24-х лет и он имеет работу,
+100$ если ему просто больше 24-х лет и 0 в ином случае. 
+Напишите функцию, которая принимает данные пользователя и товара
+ и возвращает true или false.
+*/
+
+const macBookCost = 2000;
+
+function creditAmount (age, work){
+    if (age >= 24 && work == true){
+        return 500;
+    } else if (age >= 24 && work == false){
+        return 100;
+    }
+    return 0;
+}
+
+function canBuy (money, age, work) {
+    if (money >= macBookCost){
+        return 'Может купить';
+    } else if (money + creditAmount(age, work) >= macBookCost){
+        return 'Может купить, если возьмет кредит';
+    }
+    return 'Не может купить'
+    }
+    
+
+    console.log(canBuy(1900, 25, false));
