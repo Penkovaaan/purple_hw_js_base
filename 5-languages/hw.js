@@ -41,4 +41,4 @@ switch(userLang) {
     break;
 }
 
-//console.log(userLang);
+console.log(userLang);
