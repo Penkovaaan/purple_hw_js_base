@@ -129,11 +129,21 @@ console.log(result ? 'Игрок может купить игру :)' : 'Игр�
 
 /* Переписать функцию в стрелочную */
 
+<<<<<<< Updated upstream
 function toPower(num, power){
+=======
+function toPower(num = 2, power){
+>>>>>>> Stashed changes
     const res = num ** power;
     return res;
 }
 
+<<<<<<< Updated upstream
 const toPowerArrow = (num, power) => num ** power;
 
 console.log(toPowerArrow(2,3));
+=======
+const toPowerArrow = (num = 2, power) => num ** power;
+
+console.log(toPowerArrow(2));
+>>>>>>> Stashed changes
