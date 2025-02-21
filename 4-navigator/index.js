@@ -30,4 +30,5 @@ console.log(`Координата Y2: ${destinationLongitude}`);
 
 // вывод результата
 let result = (((destinationLatitude-positionLatitude)**2 + (destinationLongitude-positionLongitude)**2)**(1/2));
+
 console.log(`Расстояние от текущего местоположения до точки назначения: ${result}`);
