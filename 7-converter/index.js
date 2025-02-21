@@ -126,9 +126,10 @@ switch(startCurrency){
 }
 
 function converter(money, startCurrency, finalCurrency){
-    return money * course(startCurrency,finalCurrency);
+    if (course(startCurrency,finalCurrency) != null) {
+        return money * course(startCurrency,finalCurrency);
+    }
+    return null;
 }
 
-console.log(converter(100,'KZT','CNY'));
-
-console.log('kys');
+console.log(converter(1000,'RUB','CNY'));
