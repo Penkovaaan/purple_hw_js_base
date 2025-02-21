@@ -177,3 +177,5 @@ function canBuy (money, age, work) {
     
 
     console.log(canBuy(1900, 25, false));
+
+    
