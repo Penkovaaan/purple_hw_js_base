@@ -25,20 +25,20 @@ let userLang = navigator.language.slice(0,2);
 
 switch(userLang) {
     case 'ru':
-    console.log('Добрый день!');
+        console.log('Добрый день!');
     break;
     case 'en':
-    console.log('Good afternoon!');
+        console.log('Good afternoon!');
     break;
     case 'de':
-    console.log('Guten Tag!');
+        console.log('Guten Tag!');
     break;
     case 'es':
-    console.log('Buenas tardes!');
+        console.log('Buenas tardes!');
     break;
     case 'pl':
-    console.log('Dzień dobry!');
+        console.log('Dzień dobry!');
     break;
 }
 
-//console.log(userLang);
+console.log(userLang);
