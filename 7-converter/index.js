@@ -58,67 +58,67 @@ switch(startCurrency){
     case 'RUB':
         switch(finalCurrency){
         case 'USD':
-        return RUBtoUSD;
+            return RUBtoUSD;
         case 'EUR':
-        return RUBtoEUR;
+            return RUBtoEUR;
         case 'CNY':
-        return RUBtoCNY;
+            return RUBtoCNY;
         case 'KZT':
-        return RUBtoKZT;
+            return RUBtoKZT;
         default:
-        return null;
+            return null;
         }
     case 'KZT':
         switch(finalCurrency){
             case 'USD':
-            return KZTtuUSD;
+                return KZTtuUSD;
             case 'EUR':
-            return KZTtuEUR;
+                return KZTtuEUR;
             case 'CNY':
-            return KZTtoCNY;
+                return KZTtoCNY;
             case 'RUB':
-            return KZTtoRUB;
+                return KZTtoRUB;
             default:
-            return null;
+                return null;
         }
     case 'USD':
         switch(finalCurrency){
             case 'KZT':
-            return USDtoKZT;
+                return USDtoKZT;
             case 'EUR':
-            return USDtoEUR;
+                return USDtoEUR;
             case 'CNY':
-            return USDtoCNY;
+                return USDtoCNY;
             case 'RUB':
-            return USDtoRUB;
+                return USDtoRUB;
             default:
-            return null;
+                return null;
         }
     case 'EUR':
         switch(finalCurrency){
             case 'USD':
-            return EURtoUSD;
+                return EURtoUSD;
             case 'KZT':
-            return EURtoKZT;
+                return EURtoKZT;
             case 'CNY':
-            return EURtoCNY;
+                return EURtoCNY;
             case 'RUB':
-            return EURtoRUB;
+                return EURtoRUB;
             default:
-            return null;
+                return null;
         }
     case 'CNY':
         switch(finalCurrency){
             case 'USD':
-            return CNYtoUSD;
+                return CNYtoUSD;
             case 'KZT':
-            return CNYtoKZT;
+                return CNYtoKZT;
             case 'EUR':
-            return CNYtoEUR;
+                return CNYtoEUR;
             case 'RUB':
-            return CNYtoRUB;
+                return CNYtoRUB;
             default:
-            return null;
+                return null;
         }
     default:
         return null;
