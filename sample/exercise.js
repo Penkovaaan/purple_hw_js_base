@@ -155,6 +155,7 @@ console.log(toPowerArrow(2,3));
  и возвращает true или false.
 */
 
+/*
 const macBookCost = 2000;
 
 function creditAmount (age, work){
@@ -178,4 +179,82 @@ function canBuy (money, age, work) {
 
     console.log(canBuy(1900, 25, false));
 
-    
+*/
+
+
+/* 
+Дан список задач
+
+const tasks = ['Задача 1']; Сделать функции:
+
+    Добавление задачи в конец
+    Удаление задачи по названию
+    Перенос задачи в начало списка по названию
+
+! Всегда меняем исходный массив
+*/
+
+/*
+const tasks = ['Задача 1'];
+
+function addToEnd (taskName){
+    tasks.push(taskName);
+}
+
+function deleteTask (taskName){
+    const indexTask = tasks.indexOf(taskName);
+    if (indexTask === -1){
+        return;
+    }
+    return tasks.splice(indexTask, 1);
+}
+
+function removeToStart (taskName){
+    const res = deleteTask(taskName);
+    if (!res){
+        return;
+    }
+    tasks.unshift(res[0]);
+}
+
+addToEnd('Задача 2');
+addToEnd('Задача 3');
+console.log(tasks);
+
+deleteTask('Задача 2');
+console.log(tasks);
+
+removeToStart('Задача 3')
+console.log(tasks);
+
+*/
+
+/*
+Дан произвольный url вида - https://purpleschool.ru/course/javascript
+
+Нужно сделать функцию, которая выводит в консоль:
+
+    Протокол (https)
+    Доменное имя (purpleschool.ru)
+    Путь внутри сайта (/course/javascript)
+*/
+
+/*
+//мое решение
+const url = 'https://purpleschool.ru/course/javascript';
+
+function getUrlParts (url){
+    const [protokol, _, domain, ...path] = url.split('/');
+    console.log(protokol.replace(':',''), domain, path.join('/'));
+}
+
+//console.log(getUrlParts(url));
+
+//решение из видоса
+function getUrlParts2 (url){
+    const [protokol, _, domain, ...path] = url.split('/');
+    return `Протокол: ${protokol.replace(':','')}\nДоменное имя: ${domain}\nПуть внутри сайта: /${path.join('/')}`;
+}
+
+//console.log(getUrlParts2(url));
+*/
