@@ -18,15 +18,9 @@ const pass = 'HarryPotter'
 
 function crypto(password){
     let data = password.split('');
-    if (data.length % 2 === 0){
-        const part1 = data.slice(0, (data.length)/2).reverse();
-        const part2 = data.slice((data.length)/2, data.length).reverse();
-        return res = part1.concat(part2).join('');
-    } else {
-        const part1 = data.slice(0, (data.length+1)/2).reverse();
-        const part2 = data.slice((data.length+1)/2, data.length).reverse();
-        return res = part1.concat(part2).join('');
-    }  
+    const part1 = data.slice(0, (data.length)/2).reverse();
+    const part2 = data.slice((data.length)/2, data.length).reverse();
+    return res = part2.concat(part1).join('');  
 }
 console.log(crypto(pass));
 
