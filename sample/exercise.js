@@ -265,6 +265,7 @@ function getUrlParts2 (url){
     Цель: Получить строку "я люблю js !".
 */
 
+/*
 const arr = ['!','js','люблю','я'];
 let newArr = [];
 
@@ -272,3 +273,59 @@ for(let i = arr.length; i > 0; i--){
     newArr.push(arr[i-1]);
 }
 console.log(newArr.join(' '));
+
+*/
+
+
+/*
+Есть выгрузка операций пользователя
+const operations = [1000, -700, 300, -500, 10000];
+а также начальный баланс в 100$
+необходимо сделать функции расчета:
+- итогового баланса
+- наличия отрицательного баланса(если после очередной операции баланс < 0
+то нужно вывести false, а если положительный true)
+- рассчета среднего дохода и расходов
+*/
+
+/*
+const operations = [1000, -700, 300, -500, 10000];
+const startBalance = 100;
+
+function totalAmount (arr, summ) {
+    for (let index in arr) {
+        summ += arr[index];
+    }
+    return summ;
+}
+
+function negativeBalance (arr, summ) {
+    let balance = totalAmount(arr, summ);
+        if (balance >= 0){
+            return true;
+        }
+        return false;
+}
+
+function averageExpenceIncome (arr) {
+    let positive = 0;
+    let negative = 0;
+    let index1 = 0;
+    let index2 = 0;
+    for (let index in arr) {
+        if (arr[index] > 0){
+            positive += arr[index];
+            index1++;
+        } else {
+        negative -= arr[index];
+        index2++;
+        }
+    }
+    return `Средний доход: ${positive/index1} Средний расход: ${negative/index2}`
+    }
+
+
+console.log(totalAmount(operations, startBalance));
+console.log(averageExpenceIncome(operations));
+console.log(negativeBalance(operations, startBalance));
+*/
