@@ -329,3 +329,13 @@ console.log(totalAmount(operations, startBalance));
 console.log(averageExpenceIncome(operations));
 console.log(negativeBalance(operations, startBalance));
 */
+
+//Напишите стрелочную функцию
+
+function power(pow) {
+    return function (num) {
+        return num**pow;
+    }
+}
+
+const power1 = pow => num => num**pow;
