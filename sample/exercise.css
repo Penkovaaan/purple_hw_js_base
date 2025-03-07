@@ -1,0 +1,10 @@
+body{
+    background: url(mr-robot.jpg) no-repeat;
+    background-size: 100%;
+    padding-top: 10px;
+}
+
+.elliot{
+color: red;
+font-style: italic;
+}
