@@ -9,7 +9,7 @@
 если его надо удалить и false, если надо оставить
 */
 
-let arr1 = [3, 6, 34, 18, 2, 13, 11]
+let mass = [3, 6, 34, 18, 2, 13, 11]
 
 
 function more (num, lim) {
@@ -22,13 +22,13 @@ function less (num, lim) {
 
 function arrayClean (arr, fn) {
     let result = [];
-    for (let i = 0; i < arr.length; i++) {
-    if (fn(arr[i])) {
-        result.push(arr[i]);
+    for (let element of arr) {
+    if (fn(element)) {
+        result.push(element);
     }
 }
     return result;
 }
 
-console.log(arrayClean(arr1, (num) => less(num, 10)));
-console.log(arrayClean(arr1, (num) => more(num, 10)));
+console.log(arrayClean(mass, (num) => less(num, 10)));
+console.log(arrayClean(mass, (num) => more(num, 10)));
