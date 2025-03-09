@@ -329,3 +329,52 @@ console.log(totalAmount(operations, startBalance));
 console.log(averageExpenceIncome(operations));
 console.log(negativeBalance(operations, startBalance));
 */
+
+
+/*
+Имеется массив изменения цен prices, где внутри
+
+1й элемент массива является ценой в момент Х, 2й - ценой в момент Y.
+
+Нужно преобразовать данные в массив,
+где будут отображены только положительные изменения цен: [100, 150]
+*/
+
+/*
+const prices = [[100, 200], [120, 100], [200, 350], [100, 300]];
+
+const result = prices
+    .map(arr => arr[1] - arr[0])
+    .filter(delta => delta > 0);
+
+console.log(result);
+*/
+
+/*
+Найти среднее значение последоватедьности чисел с помощью reduce
+
+const arr = [1, 4, 4, 10];
+ */
+
+/*
+const arr = [1, 4, 4, 10];
+
+const result = arr.reduce((acc, el, i) => {
+	if (i < arr.length-1){
+    return acc += el;
+    } return (acc+= el) / arr.length;
+}, 0)
+
+console.log(result);
+*/
+
+//Написать функцию, которая возвращает true, 
+//если элемент есть, и false, если нет.
+
+const arr = [2, 4, 4, 10, 20]
+
+function some (array, element) {
+    return array.find(el => el == element) !== undefined;
+}
+
+console.log(some(arr, 20));
