@@ -368,9 +368,10 @@ const result = arr.reduce((acc, el, i) => {
 console.log(result);
 */
 
-//Написать функцию, которая возвращает true, 
+//11.8 Написать функцию, которая возвращает true, 
 //если элемент есть, и false, если нет.
 
+/*
 const arr = [2, 4, 4, 10, 20]
 
 function some (array, element) {
@@ -378,3 +379,4 @@ function some (array, element) {
 }
 
 console.log(some(arr, 20));
+*/
